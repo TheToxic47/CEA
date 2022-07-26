@@ -1,0 +1,660 @@
+@font-face {
+    font-family: raleway;
+    src: url(fonts/raleway.woff2) format('woff2');
+    font-style: normal;
+}
+@font-face{
+    font-family: corinthia;
+    src: url(fonts/corinthia.woff2) format('woff2')
+}
+@font-face{
+    font-family: kdam;
+    src: url(fonts/kdam.woff2) format('woff2');
+}
+@font-face{
+    font-family: neue;
+    src: url(fonts/neue.woff2) format('woff2');
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    color: black;
+    background-color: #000000;
+
+}
+.nav-link{
+    cursor: pointer;
+}
+.blur{
+    backdrop-filter: blur(5px);
+
+}
+.titulo12{
+    text-shadow: red -2px 0,
+                 cyan 2px 0;
+                 text-decoration: underline 3px;
+}
+header{
+    background:linear-gradient(40deg,#8c366c, #6e64e7 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:0;
+    padding-bottom: 200px;
+    font-family: raleway;
+    user-select: none;
+}
+
+/*Password*/
+.top13{ 
+    display: none;
+    border: 4px #0066cc;
+    border-radius: 400px;
+}
+.top14{
+    display: contents;
+    border: 4px #0066cc;
+    border-radius: 400px;
+}
+.input-container{
+    width: 280px;
+    position: relative;
+}
+.label{
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: #B3B3B3;
+
+}
+.text-input{
+    padding: 0.5rem;
+    width: 100%;
+    height: 80%;
+    border: 10px 0px 0px 10px solid #2F2C45;
+    background: #272530;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.label::before{
+    content: "";
+    height: 5px;
+    background: #272530;
+    position: absolute;
+    left: 0px;
+    top: 13px;
+    width: 100%;
+    z-index: -1;
+}
+.text-input:focus{
+    border: 2px solid #7E4CCB;
+}
+.text-input:focus + .label, .filled{
+    top: -13px;
+    color: #7E4CCB;
+    font-size: 14px;
+}
+.text-input::placeholder{
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.text-input:focus::placeholder{
+    opacity: 1;
+}
+
+.botonh .btn{
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2a9d8f;
+    padding: 0.35rem;
+    width: 50%;
+    height: 100%;
+    border: 2px solid #2F2C45;
+    box-shadow: none;
+    border-radius: 0px 10px 10px 0px;
+    transition : 1094ms;
+    transform: translateY(0);
+    text-transform: lowercase;
+    }
+.botonh .btn:hover{
+    transition : 1094ms;
+    width: 50%;
+    height: 100%;
+    border: 2px solid #2F2C45;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    cursor: pointer;
+    
+}
+
+
+.botonhorarios .horarios{
+    width: 280px;
+    height: 50px;
+    position: absolute;
+    transition: all 0.8s;
+}
+
+.horarios::before{
+    height: 505px;
+    background: #2f00ff;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+/*Fin password*/
+
+
+
+.bordeup{
+    font-family: kdam, cursive;
+    padding-top: 100px;
+    padding-bottom: 3%;
+    justify-content: center;
+    text-align: center;
+    font-size: 400%;
+}
+.bordeleft{
+    padding-left: 100px;
+}
+
+.parrafogrande{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fondo1{
+    background:linear-gradient(40deg,#302B63, #0f0c29 );
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.act{
+    font-family: neue;
+    font-size: 600%;
+    background: linear-gradient(
+        to right,
+        rgb(0, 162, 255),
+        rgb(0, 255, 85)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.fondo3{
+    background-image: url(img/fondo3.png);
+    background-size: cover;
+}
+.fondo2{
+    background-image: url(img/redes1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bordes{
+    border: #f03a3a solid 3px;
+}
+.texto1{
+    width: 50%;
+    margin: 150px;
+    padding: 120px;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+}
+.card{
+    border: #ffffff solid;
+
+}
+
+h2{
+    justify-content: center;
+    text-align: center;
+    font-family: raleway;
+    font-size: 35px;
+    padding-top: 25px;
+}
+
+.toxic{
+    background:linear-gradient(0deg, #0f3443, #34e89e );
+    padding: 1% 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-radius: 10px;
+}
+.conocimientos {
+    border: 10px solid black;
+    animation-name: ColorDelBorde;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+}
+.containerhe {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 80vh;
+  }
+  
+  .boxhe {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 1.5%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .boxhe > img {
+    width: 100%;
+    height: calc(100% - 12vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .boxhe > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .boxhe:hover { flex: 0 0 50%;}
+  .boxhe:hover > span { font-size: 200;}
+  .boxhe:hover > img {
+    width: 100%;
+    height: 80%;
+  }
+hr{
+    color: white;
+}
+.offcanvasNavbarDropdown{
+    color: rgb(36, 36, 36);
+}
+/*Organos*/
+h6 {
+
+   padding: 10px;
+
+
+}
+.centrar{
+    justify-content: center;
+    text-align: center;
+}
+.bottoms{
+    padding-bottom: 15px;
+}
+/*Organo Ejecutivo*/
+
+
+/*animacion letras*/
+.letra1{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    animation: gotass 1.8s linear infinite;
+}
+.letra2{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    animation: gotass 1.8s linear infinite;
+    animation-delay: .4s;
+}
+.letra3{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    animation: gotass 1.8s linear infinite;
+}
+.letra4{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    animation: gotass 1.8s linear infinite;
+    animation-delay: .4s;
+}
+.letra5{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    animation: gotass 1.8s linear infinite;
+}
+.letra6{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    animation: gotass 1.8s linear infinite;
+    animation-delay: .4s;
+}
+.letra7{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    animation: gotass 1.8s linear infinite;
+}
+.letra8{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    animation: gotass 1.8s linear infinite;
+    animation-delay: .4s;
+}
+.letra9{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    animation: gotass 1.8s linear infinite;
+}
+.letra10{
+    width: 10%;
+    height: 10%;
+    font-size: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    animation: gotass 1.8s linear infinite;
+    animation-delay: .4s;
+}
+/*fin letras*/
+
+/*posicionamiento navgar*/
+.navbar-dark{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.nav-link:hover {
+    background-color: #555353;
+}
+.nav-link:active{
+    background-color: #161515;
+}
+
+/* animacion gotas*/
+@keyframes gotass{
+    100%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    0%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+/*transicion de colores del borde*/
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ColorDelBorde {
+    0%{
+        border: 3px solid #000000;
+    }
+    25% {
+        border: 3px solid #14e986;
+    }
+    50% {
+        border: 3px solid #000000;
+    }
+    75% {
+        border: 3px solid #14e986;
+    }
+    100% {
+        border: 3px solid #000000;
+    }
+}
+
+/*Redes Sociales*/
+.redestitutlo{
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #f3f3f3;
+    font-family: corinthia;
+    font-size: 40px;
+}
+.redes{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 1px;
+}
+.redes ul li{
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes ul li a{
+    display: block;
+    padding: 0 10px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px;
+    transition: .2s;
+    background-color: transparent;
+    border-collapse: 20px;
+    color: black;
+}
+.redes ul li .fcbk{
+    animation-name: fcbk;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;;
+}
+.redes ul li .dscd{
+    animation-name: dscd1;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;;
+}
+.redes ul li .wsp{
+    animation-name: wsp;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;;
+}
+.redes ul li .ig{
+    animation-name: ig;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;;
+}
+
+.redes ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px;
+    filter: contrast(2);
+    background-color: rgb(136, 134, 134);
+}
+/* Footer */
+@keyframes ig{
+    0%{
+        border: 3px solid #696969;
+    }
+    50% {
+        border: 3px solid #ec15ac;
+    }
+    100% {
+        border: 3px solid #696969;
+    }
+}
+@keyframes wsp{
+    0%{
+        border: 3px solid #696969;
+    }
+    50% {
+        border: 3px solid #47f7ad;
+    }
+    100% {
+        border: 3px solid #696969;
+    }
+}
+@keyframes dscd1{
+    0%{
+        border: 3px solid #696969;
+    }
+    50% {
+        border: 3px solid #6607ff;
+    }
+    100% {
+        border: 3px solid #696969;
+    }
+}
+@keyframes fcbk{
+    0%{
+        border: 3px solid #696969;
+    }
+    50% {
+        border: 3px solid #1100ff;
+    }
+    100% {
+        border: 3px solid #696969;
+    }
+}
+
+
+
+/*responsivo en celular*/
+@media screen and (max-width: 1400px) {
+    html{
+        width: auto;
+    }
+    .navbar-dark{
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: #1b1b1b;
+    }
+    .nav-link{
+        margin-left: 10px;
+    }
+    .nav-link:hover{
+        padding-left: 10px;
+    }
+    .nav-link:active{
+        background-color: #161515;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .ceas{
+        padding-bottom: 0vh;
+    }
+    html{
+        width: 100vh;
+        }
+    body{
+        width: 100vmax;
+    }
+    .carteles{
+        width: 80%;
+
+}
+}
+    @media screen and (max-width: 503px) {
+        html{
+            width: 1000vh;
+            min-width: 100%;
+            font-size: 20px;
+            }
+        body{
+            width: 100vmax;
+        }
+        .carteles{
+            width: 80%;
+
+    }
+        
+
+
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/fontello/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}?v1">
+    
+    
+    <title>Centro de Estudiantes</title>
+</head>
+<body>
+
+  <!--inicio navgar-->
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+<a class="navbar-brand text-light" href="https://thetoxic47.github.io/CentroDeEstudiantes/">
+<img src="img/favicon.ico" alt="icono" width="30" height="30" class="d-inline-block align-text-top">
+Centro de Estudiantes </a>
+ <a class="btn btn-outline-dark" href="https://steamcommunity.com/id/krowprofile" target="_blank">
+     Toxic
+ </a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+       <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+           <ul class="navbar-nav">
+<li class="nav-item px-2">
+                <div class="top13" id="horarios1">
+                    <div class="row g-0 input-container">
+                            <div class="col-8">
+                <input type="password"
+                       id="domTextElement"
+                       class="text-input"
+                       autocomplete="off"
+                       placeholder="Enter password"
+                       required
+                />
+                <label class="label" for="password" for="domTextElement" style="user-select: none;">Password</label>
+                         </div>
+                        <div class="col-4">
+                <div class="botonh">
+                    <button type="button" class="btn" onclick="obtenerValor()"> 
+                      <i class="bi bi-chevron-right"></i>
+                    </button> 
+                </div>
+                        </div>
+            
+                </div>
+            </div>
+</li>
+<li class="nav-item px-2">
+<a class="nav-link active" aria-current="page" onclick="Password1()" id="dimensions12" style="user-select: none;">Horarios</a>
+</li>
+<li class="nav-item px-2">
+<a class="nav-link active" href="https://drive.google.com/file/d/1WVZcVQ-HxHtj_LG3738lkHOducksuhSj/view?usp=sharing" target="_blank">Cuerpo Directivo</a>
+</li>
+<li class="nav-item px-2">
+<a class="nav-link active" href="https://drive.google.com/file/d/1AqTL4CNE3z6itb0JLg_3R9o43bR9rwGh/view" target="_blank">Organigrama</a>
+</li>
+<li class="nav-item px-2">
+  <a class="nav-link active" href="horarios.html">Los Horarios wey</a>
+  </li>
+         </ul>
+
+       </div>
+     </div>
+                 </nav>  
+  <!--fin navgar-->
+
+    <header class="bg-transparent text-white" style="width: 100%;">
+        <!--Titulo-->
+        <h1 class="bordeup titulo12" style="color: white;" id="inicio">Centro de Estudiantes</h1>
+        <!--About-->
+        <div class="gotas">
+          <div class="letra1"><p>X</p></div>
+          <div class="letra2"><p>T</p></div>
+          <div class="letra3"><p>O</p></div>
+          <div class="letra4"><p>E</p></div>
+          <div class="letra5"><p>I</p></div>
+          <div class="letra6"><p>A</p></div>
+          <div class="letra7"><p>C</p></div>
+          <div class="letra8"><p>E</p></div>
+          <div class="letra9"><p>T</p></div>
+          <div class="letra10"><p>E</p></div>
+        </div>
+
+    <div class="justify-content-center align-items-center pb-1">
+        <div class="blur card container-fluid bg-transparent text-white" style="max-width: 1000px;">
+          <div class="row align-items-start">
+            <div class="col-sm-7 ceas">
+              <img src="img/cea.png" style="border-radius: 18px; justify-content: space-between;" class="img-fluid" alt="...">
+            </div>
+            <div class="col-sm-4">
+              <div class="card-body">
+                <h4 class="blur card-title pt-5">Qué es?</h4>
+                <hr>
+                <p class="card-text">Es el órgano que engloba a todos los alumnos de la Escuela Técnica Aeronáutica Nro 32. Es una organización apartidaría, integrada y dirigida únicamente por estudiantes, que se encarga tanto de organizar actividades como así también de defender sus derechos..</p>
+                       
+                
+                
+
+
+
+
+
+
+
+                <audio class="align-bottom pt-4" controls="" id="au" preload="">
+                  <source src="audio/pyke.mp3" type="audio/mp3" id="playaudio1">
+                    </audio>
+                    <p class="card-text mt-1"><small class="text-muted">-Toxic 2020-2022</small></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </header>
+        <!--FinAbout-->
+
+<div class="fondo1">
+  <br>
+  <br>   
+<br>
+<h1 class="act justify-content-center text-center pb-0 pt-3">Actividades Realizadas</h1>
+<div class="container-xl toxic bg-dark">
+<div>
+        
+            <!--cartas-->
+              <div class="conocimientos" id="conocimientos1">
+               
+                <div class="containerhe text-light">
+                  <div class="boxhe">
+                  <img src="img/carousel/1.jpg">
+                    <span>Jornadas d/Lecturas</span>
+                  </div>
+                  <div class="boxhe">
+                    <img src="img/carousel/2.jpg">
+                    <span>Actos Académicos</span>
+                  </div>
+                  <div class="boxhe">
+                    <img src="img/carousel/3.jpg">
+                    <span>Crossovers c/Politicos</span>
+                  </div>
+                  <div class="boxhe">
+                    <img src="img/carousel/4.jpg">
+                    <span>Charlas y Talleres</span>
+                  </div>
+                  <div class="boxhe">
+                    <img src="img/carousel/5.jpg">
+                    <span>Campeonatos Deportivos</span>
+                  </div>
+                </div>
+                </div>
+
+
+<br>
+<div>
+</div>
+</div>
+</div>
+<!--Espacio ejemplo-->
+<br>
+<br>
+<br>
+<br>
+<br> 
+<!-- Fin de espacio ejemplo-->
+</div>
+
+  <div class="fondo3">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="carteles">
+      <h2 class="text-light container-fluid" style="padding-bottom: 5px;" id="contacto">Organos que lo componen <img src="img/organ.svg" width="80px" height="80px"></h2>
+      <hr>
+      <br>
+      <div class="row container-fluid justify-content-between">
+        <div class="col-xl-6 mx-1 sectionAgradecimiento bg-dark text-light bg-transparent">
+            <div style="padding-top: 20px; user-select: none; margin-bottom: 50px;">
+              <h2>
+                "Comisión Directiva"
+                <img src="img/direc.svg" width="10%" height="10%" style="margin-bottom: 35px;">
+              </h2>
+              <hr>
+              <br>
+              <h5 class="centrar bottoms">
+              Actúa ante terceros en representación  de todos los estudiantes.
+
+              Está integrada equitativamente por alumnos de ambos turnos, y cuyas autoridades son: 
+              </h5>
+              <ul>
+  <li class="bottoms"> <strong>Presidente</strong> :  Preside y coordina las reuniones, asambleas del centro, las actividades de todas las secretarias y  representa a la agrupación en todos los actos y reuniones con la comunidad.</li> 
+  <li class="bottoms"> <strong>Vicepresidente</strong>: Reemplaza al presidente en caso de ausencia, renuncia o expulsión, asumiendo todas las funciones anteriormente mencionadas.</li>
+  <li class="bottoms"> <strong>Secretaría General</strong>: coordina y dirige a todo el Cuerpo de Delegados.</li>
+  <li class="bottoms"> <strong>Tesorería</strong>: recauda y administra sumas de dinero que por distintos conceptos correspondan al centro de estudiantes.</li>
+  <li class="bottoms"> <strong>Secretaría de Cultura</strong>: fomenta la realización de charlas, jornadas de capacitación, talleres y demás actividades recreativas tendientes a la formación integral de los alumnos.</li>
+  <li class="bottoms"> <strong>Secretaría de Deportes</strong>: organiza torneos deportivos, fomenta la práctica de deportes entre todos los estudiantes.</li>
+  <li> <strong>Vocales</strong>: difunden y dan a conocer al público las actividades y novedades del centro, a través del uso de los medios de comunicación.</li>
+
+              </ul>             
+            </h6>
+           </div>
+        </div>
+
+
+      <br><br><br><br><br><br><br><br>
+      <!--Cartel de agradecimiento-->
+      <div class="col-xl-5 mx-1 sectionAgradecimiento bg-transparent text-light align-content-center align-items-center" style="padding-top:20px; user-select: none;" id="mensajeAgradecimiento">
+        <h2 style="text-align: center;">
+          <img src="img/deleg.svg" width="10%" style="margin-bottom: 35px;" height="10%">
+          "Cuerpo de Delegados"
+        </h2>
+        <hr>
+        <br>
+
+        <ul>
+          Es el órgano que ejerce la representación de los cursos y divisiones ante el Centro de Estudiantes.
+<br>
+<br>
+         <li> Cada curso deberá elegir al comienzo del ciclo lectivo un Delegado y un Sub delegado para que los represente y lleve sus inquietudes / proyectos para ser debatidos en la Asamblea estudiantil.
+        </li>
+        </ul>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+</div>
+<div class="fondo2" style="padding-top: 0px;">
+  <h4 class="redestitutlo" id="redes">Quieres visitarnos en redes sociales? Adelante...</h4>
+<div class="redes">
+<ul class="ulredes">
+  <li><a href="https://www.instagram.com/estudiantes_cea32/" target="_blank" class="ig"><img src="img/instagram.svg" width="100%" height="100%" style="padding-bottom: 1.5px;"></a></li>
+  <li><a href="https://discord.gg/Fw8nQMBQ" target="_blank" class="dscd"><img src="img/discord-icon.svg" width="100%" height="100%" style="padding-bottom: 1.5px;"></a></li>
+  <li><a href="https://wa.me/+5493624144459" target="_blank" class="wsp"><img src="img/whatsapp.svg" width="100%" height="100%" style="padding-bottom: 1.5px;"></a></li>
+  <li><a href="https://www.facebook.com/centroaeronautica32" target="_blank" class="fcbk"><img src="img/facebook.svg" width="100%" height="100%" style="padding-bottom: 1.5px;"></a></li>
+</ul>
+  </div>
+ </div>
+
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
