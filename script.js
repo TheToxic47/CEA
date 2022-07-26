@@ -37,8 +37,7 @@ document.querySelectorAll(".text-input").forEach((Element)=>{
   
     if (inputValue == "eeta2021"){
       alert("Contraseña correcta.")
-      let horarios = window.open('', '_blank');
-      horarios.location.href = 'http://thetoxic47.github.io/Horarios';
+      window.location.href = 'horarios.html';
     }
     else{
     alert("Contraseña incorrecta.");
